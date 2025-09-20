@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BarChart3, Users, Activity } from 'lucide-react';
+import { LayoutDashboard, ClipboardList, BarChart3, MapPin } from 'lucide-react';
 
 interface BottomNavProps {
   activeTab: string;
@@ -8,9 +8,10 @@ interface BottomNavProps {
 
 const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) => {
   const tabs = [
-    { id: 'home', label: 'Home', icon: Home },
-    { id: 'status', label: 'Status', icon: BarChart3 },
-    { id: 'community', label: 'Community', icon: Users }
+    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'assignments', label: 'Assignments', icon: ClipboardList },
+    { id: 'reports', label: 'Reports', icon: BarChart3 },
+    { id: 'fieldwork', label: 'Field Work', icon: MapPin }
   ];
 
   return (
